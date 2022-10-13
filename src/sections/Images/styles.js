@@ -26,9 +26,9 @@ export const Container = styled.div`
 export const ImagesContainer = styled.div`
   width: 100%;
   height: 100%;
-  padding: 0 130px;
+  padding: 0 50px;
   display: grid;
-  grid-template-columns: 442px 442px 442px;
+  grid-template-columns: 430px 430px 430px;
   justify-content: space-between;
   img{
     width: 400px;
