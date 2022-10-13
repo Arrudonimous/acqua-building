@@ -11,7 +11,7 @@ export const Container = styled.header`
     height: 250vh;
     width: 100vw;
   }
-  @media(max-width: 400px){
+  @media(max-width: 500px){
     flex-direction: column;
     height: 80vh;
   }
@@ -27,7 +27,7 @@ export const ContentContainer = styled.div`
   width: 50%;
   height: 100%;
 
-  @media(max-width: 400px){
+  @media(max-width: 500px){
     padding: 175px 16px;
     height: 60vh;
   }
@@ -41,7 +41,7 @@ export const ContentContainer = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    @media(max-width: 400px){
+    @media(max-width: 500px){
       font-size: 38px;
     }
     
@@ -54,7 +54,7 @@ export const ContentContainer = styled.div`
     font-style: italic;
     margin-bottom: 23px;
 
-    @media(max-width: 400px){
+    @media(max-width: 500px){
       font-size: 14px;
     }
   }
@@ -65,7 +65,7 @@ export const ContentContainer = styled.div`
     line-height: 21px;
     margin-bottom: 39px;
 
-    @media(max-width: 400px){
+    @media(max-width: 500px){
       font-size: 12px;
     }
   }
@@ -79,7 +79,7 @@ export const FormContainer = styled.div`
   width: 408px;
   display: flex;
   flex-direction: column;
-  @media(max-width: 400px){
+  @media(max-width: 500px){
     width: 316px;
   }
 
@@ -95,7 +95,7 @@ export const FormContainer = styled.div`
       color: #606060;
     }
 
-    @media(max-width: 400px){
+    @media(max-width: 500px){
       padding: 13px 17px;
       font-size: 12px;
     }
@@ -113,7 +113,7 @@ export const FormContainer = styled.div`
     &:hover{
       background: #6CAFDA;
     }
-    @media(max-width: 400px){
+    @media(max-width: 500px){
       padding: 12px 96px;
       font-size: 14px;
     }

@@ -20,7 +20,7 @@ export const Container = styled.div`
     &+ul{
       margin-left: 89px;
 
-      @media(max-width: 400px){
+      @media(max-width: 500px){
         margin-left: 48px;
       }
     }
@@ -30,7 +30,7 @@ export const Container = styled.div`
       font-weight: bold;
       filter: drop-shadow(4px 4px 9px rgba(0, 0, 0, 0.45));
 
-      @media(max-width: 400px){
+      @media(max-width: 500px){
         font-size: 32px;
       } 
     }
@@ -42,7 +42,7 @@ export const Container = styled.div`
     text-transform: uppercase;
     filter: drop-shadow(4px 4px 9px rgba(0, 0, 0, 0.45));
 
-    @media(max-width: 400px){
+    @media(max-width: 500px){
       font-size: 10px;
     } 
 
@@ -53,5 +53,12 @@ export const Container = styled.div`
     height: 100vh;
     display: flex;
   }
+
+  @media(max-width: 500px){
+    width: 100%;
+    height: 80vh;
+    display: flex;
+  }
+
 
 `;

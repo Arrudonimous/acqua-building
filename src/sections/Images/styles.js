@@ -27,7 +27,7 @@ export const Container = styled.div`
     }
   }
 
-  @media(max-width: 400px){
+  @media(max-width: 500px){
     height: 60vh;
     padding: 76px 13px;
   }
@@ -62,7 +62,7 @@ export const Section = styled.div`
         margin-left: 22px;
       }
     }
-    @media(max-width: 400px){
+    @media(max-width: 500px){
       width: 120px;
       height: 120px;
 
