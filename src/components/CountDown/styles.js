@@ -10,6 +10,15 @@ export const Container = styled.div`
   background-color: black;
   display: flex;
   justify-content: center;
+  @media(max-width: 1000px){
+    width: 100%;
+    height: 100vh;
+  }
+  @media(max-width: 500px){
+    width: 100%;
+    height: 70vh;
+  }
+
   ul{
     color: #fff;
     display: flex;
@@ -19,9 +28,8 @@ export const Container = styled.div`
 
     &+ul{
       margin-left: 89px;
-
-      @media(max-width: 500px){
-        margin-left: 48px;
+      @media(max-width: 550px){
+        margin-left: 53px;
       }
     }
 
@@ -29,36 +37,19 @@ export const Container = styled.div`
       font-size: 59px;
       font-weight: bold;
       filter: drop-shadow(4px 4px 9px rgba(0, 0, 0, 0.45));
-
-      @media(max-width: 500px){
+      @media(max-width: 550px){
         font-size: 32px;
-      } 
+      }
+    }
+
+    li{
+      list-style-type: none;
+      font-size: 14px;
+      text-transform: uppercase;
+      filter: drop-shadow(4px 4px 9px rgba(0, 0, 0, 0.45));
+      @media(max-width: 550px){
+        font-size: 10px;
+      }
     }
   }
-
-  li{
-    list-style-type: none;
-    font-size: 14px;
-    text-transform: uppercase;
-    filter: drop-shadow(4px 4px 9px rgba(0, 0, 0, 0.45));
-
-    @media(max-width: 500px){
-      font-size: 10px;
-    } 
-
-  }
-
-  @media(max-width: 800px){
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-  }
-
-  @media(max-width: 500px){
-    width: 100%;
-    height: 80vh;
-    display: flex;
-  }
-
-
 `;

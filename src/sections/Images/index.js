@@ -1,4 +1,4 @@
-import { Container, Section } from './styles';
+import { Container, ImagesContainer } from './styles';
 import Image1 from '../../assets/images/predio01.png';
 import Image2 from '../../assets/images/predio02.png';
 import Image3 from '../../assets/images/predio03.jpg';
@@ -11,16 +11,14 @@ export default function Images() {
     <Container>
       <h1>Andamento do projeto</h1>
       <small>Veja como está o andamento da construção.</small>
-      <Section>
-        <img src={Image1} alt="Imagem1" />
-        <img src={Image2} alt="Imagem2" />
-        <img src={Image3} alt="Imagem3" />
-      </Section>
-      <Section>
-        <img src={Image4} alt="Imagem4" />
-        <img src={Image5} alt="Imagem5" />
-        <img src={Image6} alt="Imagem6" />
-      </Section>
+      <ImagesContainer>
+        <img src={Image1} alt="Imagem1" className="first" />
+        <img src={Image2} alt="Imagem2" className="second" />
+        <img src={Image3} alt="Imagem3" className="thirthy" />
+        <img src={Image4} alt="Imagem4" className="forthy" />
+        <img src={Image5} alt="Imagem5" className="fifthy" />
+        <img src={Image6} alt="Imagem6" className="sixthy" />
+      </ImagesContainer>
     </Container>
   );
 }

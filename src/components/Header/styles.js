@@ -5,16 +5,10 @@ export const Container = styled.header`
   width: 100%;
   display: flex;
   flex-direction: row;
-  
-  @media(max-width: 800px){
+  @media(max-width: 1000px){
     flex-direction: column;
-    height: 250vh;
-    width: 100vw;
   }
-  @media(max-width: 500px){
-    flex-direction: column;
-    height: 80vh;
-  }
+
 `;
 
 export const ContentContainer = styled.div`
@@ -26,12 +20,14 @@ export const ContentContainer = styled.div`
   justify-content: center;
   width: 50%;
   height: 100%;
-
-  @media(max-width: 500px){
-    padding: 175px 16px;
-    height: 60vh;
+  @media(max-width: 1000px){
+    width: 100%;
+    height: 100vh;
   }
-
+  @media(max-width: 1000px){
+    height: 50vh;
+    padding: 175px 16px;
+  }
 
   h1{
     background-image: linear-gradient(270deg, #3498DB 9.74%, #34495E 98.57%);
@@ -40,11 +36,9 @@ export const ContentContainer = styled.div`
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    @media(max-width: 500px){
+    @media(max-width: 1000px){
       font-size: 38px;
     }
-    
   }
 
   span{
@@ -53,8 +47,7 @@ export const ContentContainer = styled.div`
     margin-top: 13px;
     font-style: italic;
     margin-bottom: 23px;
-
-    @media(max-width: 500px){
+    @media(max-width: 1000px){
       font-size: 14px;
     }
   }
@@ -64,14 +57,9 @@ export const ContentContainer = styled.div`
     font-size: 14px;
     line-height: 21px;
     margin-bottom: 39px;
-
-    @media(max-width: 500px){
+    @media(max-width: 1000px){
       font-size: 12px;
     }
-  }
-
-  @media(max-width: 800px){
-    width: 100%;
   }
 `;
 
@@ -79,7 +67,7 @@ export const FormContainer = styled.div`
   width: 408px;
   display: flex;
   flex-direction: column;
-  @media(max-width: 500px){
+  @media(max-width: 1000px){
     width: 316px;
   }
 
@@ -94,10 +82,8 @@ export const FormContainer = styled.div`
     &::placeholder{
       color: #606060;
     }
-
-    @media(max-width: 500px){
+    @media(max-width: 1000px){
       padding: 13px 17px;
-      font-size: 12px;
     }
   }
 
@@ -113,10 +99,9 @@ export const FormContainer = styled.div`
     &:hover{
       background: #6CAFDA;
     }
-    @media(max-width: 500px){
-      padding: 12px 96px;
+    @media(max-width: 1000px){
+      padding: 12px 97px;
       font-size: 14px;
     }
   }
-
 `;
