@@ -10,6 +10,9 @@ export const Container = styled.div`
 
   h1{
     font-size: 32px;
+    @media(max-width: 800px){
+      font-size: 29px
+    }
   }
 
   small{
@@ -17,6 +20,22 @@ export const Container = styled.div`
     font-weight: 400;
     margin-top: 1px;
     margin-bottom: 74px;
+
+    @media(max-width: 800px){
+      font-size: 14px;
+      margin-bottom: 27px;
+    }
+  }
+
+  @media(max-width: 400px){
+    height: 60vh;
+    padding: 76px 13px;
+  }
+
+  @media(max-width: 800px){
+    width: 100vw;
+    height: 200px;
+    padding: 0;
   }
 `;
 
@@ -34,6 +53,25 @@ export const Section = styled.div`
     &:hover{
       transform: scale(0.98)
     }
+
+    @media(max-width: 800px){
+      width: 221px;
+      height: 221px;
+
+      & + img{
+        margin-left: 22px;
+      }
+    }
+    @media(max-width: 400px){
+      width: 120px;
+      height: 120px;
+
+      & + img{
+        margin-left: 5px;
+      }
+    }
   }
+
+  
 
 `;

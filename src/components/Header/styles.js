@@ -5,6 +5,16 @@ export const Container = styled.header`
   width: 100%;
   display: flex;
   flex-direction: row;
+  
+  @media(max-width: 800px){
+    flex-direction: column;
+    height: 250vh;
+    width: 100vw;
+  }
+  @media(max-width: 400px){
+    flex-direction: column;
+    height: 80vh;
+  }
 `;
 
 export const ContentContainer = styled.div`
@@ -17,6 +27,12 @@ export const ContentContainer = styled.div`
   width: 50%;
   height: 100%;
 
+  @media(max-width: 400px){
+    padding: 175px 16px;
+    height: 60vh;
+  }
+
+
   h1{
     background-image: linear-gradient(270deg, #3498DB 9.74%, #34495E 98.57%);
     font-weight: bold;
@@ -24,13 +40,23 @@ export const ContentContainer = styled.div`
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media(max-width: 400px){
+      font-size: 38px;
+    }
+    
   }
 
   span{
     font-weight: 600;
     font-size: 18px;
     margin-top: 13px;
+    font-style: italic;
     margin-bottom: 23px;
+
+    @media(max-width: 400px){
+      font-size: 14px;
+    }
   }
 
   small{
@@ -38,6 +64,14 @@ export const ContentContainer = styled.div`
     font-size: 14px;
     line-height: 21px;
     margin-bottom: 39px;
+
+    @media(max-width: 400px){
+      font-size: 12px;
+    }
+  }
+
+  @media(max-width: 800px){
+    width: 100%;
   }
 `;
 
@@ -45,6 +79,9 @@ export const FormContainer = styled.div`
   width: 408px;
   display: flex;
   flex-direction: column;
+  @media(max-width: 400px){
+    width: 316px;
+  }
 
   input{
     margin-bottom: 14px;
@@ -56,6 +93,11 @@ export const FormContainer = styled.div`
     border: 1px solid #bbbbbb;
     &::placeholder{
       color: #606060;
+    }
+
+    @media(max-width: 400px){
+      padding: 13px 17px;
+      font-size: 12px;
     }
   }
 
@@ -71,5 +113,10 @@ export const FormContainer = styled.div`
     &:hover{
       background: #6CAFDA;
     }
+    @media(max-width: 400px){
+      padding: 12px 96px;
+      font-size: 14px;
+    }
   }
+
 `;
